@@ -2,11 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import FriendList from './components/FriendList';
 import ProfileList from './components/ProfileList';
-import TransactionList from './components/TransactionList'
-import user from './user.json'
+import TransactionList from './components/TransactionList';
+import user from './user.json';
 import friends from './friends.json';
-import transactions from './transactions.json'
-
+import transactions from './transactions.json';
 
 function App() {
   return (
@@ -27,11 +26,11 @@ function App() {
     //   </header>
     // </div>
     <div>
+      <h1>Привіт</h1>
       <ProfileList items={user} />
       <FriendList items={friends} />
-      <TransactionList items={transactions}/>
+      <TransactionList items={transactions} />
     </div>
-   
   );
 }
 
