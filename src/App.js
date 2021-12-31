@@ -26,7 +26,6 @@ function App() {
     //   </header>
     // </div>
     <div>
-      <h1>Привіт</h1>
       <ProfileList items={user} />
       <FriendList items={friends} />
       <TransactionList items={transactions} />
