@@ -1,23 +1,23 @@
-import Profile from "./Profile";
+import Profile from './Profile';
 import PropTypes from 'prop-types';
 
-
-function ProfileList({ items }) { 
-   return (
-      <ul>
+function ProfileList({ items }) {
+  return (
+    <ul>
       <Profile
-         key={items.username}
-  tag={items.tag}
-  location={items.location}
-  avatar={items.avatar}
-  stats={items.stats}
-  name={items.username}
-/>
-   </ul>
-)
+        key={items.username}
+        tag={items.tag}
+        location={items.location}
+        avatar={items.avatar}
+        stats={items.stats}
+        name={items.username}
+      />
+    </ul>
+  );
 }
 
 ProfileList.propTypes = {
-   items: PropTypes.shape(),
-}
+  items: PropTypes.object.isRequired,
+};
+
 export default ProfileList;

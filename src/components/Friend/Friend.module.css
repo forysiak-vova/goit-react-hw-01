@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  height: 70px;
+  width: 250px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px #000;
+  padding: 5px;
+}
+.red {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 10px;
+}
+.green {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  margin: 10px;
+}
+.list {
+  list-style: none;
+}
+.avatar {
+  display: block;
+  margin-right: 10px;
+}
