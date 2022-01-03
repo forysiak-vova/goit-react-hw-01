@@ -3,7 +3,6 @@ import s from './Stats.module.css';
 import getRandomHexColor from './Color';
 
 function Stats({ options, title }) {
-  console.log(options);
   return (
     <section className={s.container}>
       <h2 className={s.title}>{title}</h2>

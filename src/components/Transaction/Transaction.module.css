@@ -1,0 +1,25 @@
+.thTitle {
+  background-color: blue;
+  width: 200px;
+  height: 40px;
+  color: white;
+}
+.tdTitle {
+  height: 40px;
+  text-align: center;
+  color: gray;
+}
+.child:nth-child(2n) {
+  background-color: #e6e6e6;
+}
+.stringTable:nth-child(2n) {
+  background-color: rgb(189, 209, 228);
+}
+.container {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 10px #000;
+  padding: 5px;
+  margin-left: 40px;
+}

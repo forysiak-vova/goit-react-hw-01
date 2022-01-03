@@ -1,25 +1,24 @@
-function Transactions({ type, amount, currency }) {
+import s from './Transaction.module.css';
+
+function Transactions({ items }) {
   return (
-    <table className="transaction-history">
+    <table className={s.container}>
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={s.thTitle}>Type</th>
+          <th className={s.thTitle}>Amount</th>
+          <th className={s.thTitle}>Currency</th>
         </tr>
       </thead>
 
       <tbody>
-        <tr>
-          <td>{type}</td>
-          <td>{amount}</td>
-          <td>{currency}</td>
-        </tr>
-        {/* <tr>
-      <td>Withdrawal</td>
-      <td>85</td>
-      <td>USD</td>
-    </tr> */}
+        {items.map(item => (
+          <tr className={s.child} key={item.id}>
+            <td className={s.tdTitle}>{item.type}</td>
+            <td className={s.tdTitle}>{item.amount}</td>
+            <td className={s.tdTitle}>{item.currency}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );
