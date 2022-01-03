@@ -1,21 +1,23 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import s from './Stats.module.css';
+import getRandomHexColor from './Color';
 
-function Stats({ options }) {
+function Stats({ options, title }) {
+  console.log(options);
   return (
     <section className={s.container}>
-      <h2 className={s.title}>Upload stats</h2>
+      <h2 className={s.title}>{title}</h2>
 
       <ul className={s.statlist}>
-        <li className="item">
+        <li className={s.item}>
           {options.map(option => (
-            <span className={s} key={option.id}>
-              {option.label}
-            </span>
-          ))}
-          {options.map(option => (
-            <span className="percentage" key={option.id}>
-              {option.percentage}
+            <span
+              className={s.span}
+              key={option.id}
+              style={{ backgroundColor: getRandomHexColor() }}
+            >
+              <span>{option.label}</span>
+              <span> {option.percentage}%</span>
             </span>
           ))}
         </li>
@@ -24,10 +26,9 @@ function Stats({ options }) {
   );
 }
 
-// Stats.propTypes = {
-//   label: PropTypes.string,
-// percentage:PropTypes.number,
-
-// };
+Stats.propTypes = {
+  options: PropTypes.array.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default Stats;

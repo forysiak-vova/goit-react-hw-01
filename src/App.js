@@ -5,6 +5,7 @@ import FriendList from './components/FriendList';
 import Stats from './components/Stats';
 import ProfileList from './components/ProfileList';
 import TransactionList from './components/TransactionList';
+
 import user from './json/user.json';
 import stats from './json/stats.json';
 import friends from './json/friends.json';
@@ -15,7 +16,7 @@ function App() {
     <div>
       <ProfileList items={user} />
       <FriendList items={friends} />
-      <Stats options={stats} />
+      <Stats options={stats} title="Upload stats" />
       <TransactionList items={transactions} />
     </div>
   );
