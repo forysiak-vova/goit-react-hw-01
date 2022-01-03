@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import FriendList from './components/FriendList';
+import FriendList from './components/Friend/FriendList';
 // import StatsList from './components/StatsList'
 import Stats from './components/Stats';
-import ProfileList from './components/ProfileList';
+import ProfileList from './components/Profile/ProfileList';
 // import TransactionList from './components/TransactionList';
 import Transaction from './components/Transaction';
 

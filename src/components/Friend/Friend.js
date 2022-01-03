@@ -12,8 +12,8 @@ function Friend({ name, status, avatar }) {
 }
 
 Friend.propTypes = {
-  name: PropTypes.string,
-  avatar: PropTypes.string,
-  status: PropTypes.bool,
+  name: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  status: PropTypes.bool.isRequired,
 };
 export default Friend;

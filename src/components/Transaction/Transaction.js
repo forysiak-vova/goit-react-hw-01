@@ -1,4 +1,5 @@
 import s from './Transaction.module.css';
+import PropTypes from 'prop-types';
 
 function Transactions({ items }) {
   return (
@@ -23,5 +24,13 @@ function Transactions({ items }) {
     </table>
   );
 }
+
+Transactions.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    }),
+  ),
+};
 
 export default Transactions;

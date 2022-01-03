@@ -1,4 +1,4 @@
-import Profile from './Profile';
+import Profile from '.';
 import PropTypes from 'prop-types';
 
 function ProfileList({ items }) {
