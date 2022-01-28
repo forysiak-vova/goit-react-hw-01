@@ -28,6 +28,11 @@ function Stats({ options, title }) {
 Stats.propTypes = {
   options: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
+  option: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    }),
+  ),
 };
 
 export default Stats;
