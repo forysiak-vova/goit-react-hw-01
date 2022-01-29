@@ -14,7 +14,6 @@
     "web-vitals": "^2.1.2"
     
   },
-  "homepage": "https://forysiak-vova/goit-react-hw-01",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
